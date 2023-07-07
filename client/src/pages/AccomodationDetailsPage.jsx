@@ -17,7 +17,7 @@ const AccomodationDetailsPage = () => {
   if (!accomodation) return;
 
   return (
-    <div className='-mx-16 mt-8 px-32 py-16 bg-gray-100 '>
+    <div className='px-2 py-4 mt-2 rounded-lg  md:-mx-16:mt-8:px-32:py-16 bg-gray-100'>
       <PhotoGallery accomodation={accomodation} />
       <div>
         <div className='grid grid-cols-1 md:grid-cols-[2fr_1fr] mt-6 gap-4 '>

@@ -14,7 +14,7 @@ function IndexPage() {
   }, []);
 
   return (
-    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 mt-16 '>
+    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 mt-16 '>
       {places.length > 0 &&
         places.map((curr) => (
           <Link to={`/accomodation/${curr._id}`} key={curr._id}>

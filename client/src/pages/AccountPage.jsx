@@ -31,7 +31,7 @@ const AcountPage = () => {
   if (redirect) return <Navigate to='/' />;
 
   const profile = (
-    <div className='mx-auto max-w-md text-center mt-16 border border-gray-300 py-4 px-2 rounded-md shadow-md shadow-gray-300'>
+    <div className='max-w-full md:max-w-md mx-auto text-center mt-16 border border-gray-300 py-4 px-2 rounded-md shadow-md shadow-gray-300'>
       <p>Logged in as {user.name}</p>
       <button
         className='max-w-sm mt-6 primary rounded-full'

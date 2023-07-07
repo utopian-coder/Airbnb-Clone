@@ -8,7 +8,7 @@ function AccountNav() {
       : "inline-flex gap-1 py-2 px-4 bg-gray-200 rounded-full";
 
   return (
-    <nav className='flex w-full justify-center items-center mt-8 gap-4'>
+    <nav className='flex flex-col md:flex:flex-row max-w-full justify-center items-center mt-8 gap-4'>
       <NavLink exact='true' to='/account' end className={dynamicClasshandler}>
         <svg
           xmlns='http://www.w3.org/2000/svg'

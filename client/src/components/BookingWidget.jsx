@@ -38,7 +38,7 @@ function BookingWidget({ accom }) {
   };
 
   return (
-    <div className='bg-white shadow-md p-4 rounded-lg'>
+    <div className='bg-white shadow-md p-4 rounded-lg my-2'>
       <h2 className='font-bold'>₹{accom.price} per night</h2>
       <div className='flex border border-gray-300 rounded-md my-2 overflow-hidden text-sm'>
         <label className='flex flex-col  px-2'>
