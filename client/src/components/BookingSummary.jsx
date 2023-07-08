@@ -6,18 +6,18 @@ import differenceInCalendarDays from "date-fns/differenceInCalendarDays/index";
 import { NightIcon, PriceIcon } from "../assets/Icons";
 
 function BookingSummary({ booking }) {
+  console.log(booking);
   return (
     <Link
-      key={booking._id}
       to={`/account/bookings/${booking._id}`}
-      className='flex gap-4 grow shrink bg-gray-100 rounded-lg p-2'
+      className='flex gap-4 grow shrink bg-gray-100 rounded-lg p-2 mt-2'
     >
       <div className=' w-48'>
         <PlaceImg acc={booking.place} />
       </div>
       <div className='flex flex-col gap-1'>
         <div className='border-b font-bold text-lg'>
-          <h2>{booking.place.title}</h2>
+          <h2>{booking.place?.title}</h2>
         </div>
         <div>
           {format(new Date(booking.checkInDate), "yyyy-MM-dd")} &rarr;{" "}

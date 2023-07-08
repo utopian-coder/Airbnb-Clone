@@ -332,6 +332,8 @@ app.get("/api/bookings", async (req, res) => {
       "place"
     );
 
+    console.log(bookingDetails);
+
     res.json(bookingDetails);
   } catch (error) {
     res.json("Booking details fetching failed");
